@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="n4PowstarTools-rt" bajaVersion="0" vendor="powstar" vendorVersion="1.0" description="powstar tools develop for N4 application" preferredSymbol="npt" nre="true" autoload="true" installable="true" buildMillis="1790431634061" buildHost="PSC-LP01" moduleName="n4PowstarTools" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="history-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="web-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="bql-rt" vendor="Tridium" vendorVersion="4.10"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="QueryConsumption" class="com.powstar.n4PowstarTools.bql.BQueryConsumption"/>
+  <type name="ValueConcat5" class="com.powstar.n4PowstarTools.bql.BValueConcat5"/>
+  <type name="QueryRealData" class="com.powstar.n4PowstarTools.bql.BQueryRealData"/>
+  <type name="MultiConsumption" class="com.powstar.n4PowstarTools.bql.BMultiConsumption"/>
+  <type name="ConsumptionFilter" class="com.powstar.n4PowstarTools.math.BConsumptionFilter"/>
+  <type name="ConsumptionWithDelta" class="com.powstar.n4PowstarTools.sleb.BConsumptionWithDelta"/>
+  <type name="AbsTimeToEpoch" class="com.powstar.n4PowstarTools.conversion.BAbsTimeToEpoch"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="ALL">
+   <req-permission>
+    <name>MANAGE_EXECUTION</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>SHUTDOWN_HOOKS</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>LOGGING</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>MODIFY_IO_STREAMS</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>SYSTEM_PROPERTIES</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+    <parameters>
+     <parameter name="properties" value="*"/>
+     <parameter name="actions" value="read,write"/>
+    </parameters>
+   </req-permission>
+   <req-permission>
+    <name>SET_SYSTEM_TIME</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>LOAD_LIBRARIES</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+    <parameters>
+     <parameter name="libraries" value="*"/>
+    </parameters>
+   </req-permission>
+   <req-permission>
+    <name>AUTHENTICATION</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>GET_ENVIRONMENT_VARIABLES</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+    <parameters>
+     <parameter name="variables" value="NIAGARA_HOME,NIAGARA_USER_HOME,NIAGARA_DEV_HOME,GRADLE_HOME,JAVA_HOME,MAVEN_HOME,TEMP,TMP,WINDIR,PATH,CLASSPATH,COMSPEC,PATH,USERNAME,LOGONSERVER,USERDOMAIN,USERNAME,USERPROFILE,HOMEPATH,HOMEDRIVE,APPDATA,LOCALAPPDATA,CLIENTNAME"/>
+    </parameters>
+   </req-permission>
+   <req-permission>
+    <name>NETWORK_COMMUNICATION</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+    <parameters>
+     <parameter name="hosts" value="*"/>
+     <parameter name="ports" value="1-65535"/>
+     <parameter name="type" value="all"/>
+     <parameter name="proxySelector" value="get"/>
+    </parameters>
+   </req-permission>
+   <req-permission>
+    <name>UNAUTHENTICATED_ACCESS</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>DIAGNOSTICS</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+   <req-permission>
+    <name>UI</name>
+    <purposeKey>purposeKey.purpose</purposeKey>
+   </req-permission>
+  </niagara-permission-groups>
+ </permissions>
+ <moduleParts>
+  <modulePart name="n4PowstarTools-ux" runtimeProfile="ux"/>
+  <modulePart name="n4PowstarTools-wb" runtimeProfile="wb"/>
+ </moduleParts>
+</module>

@@ -1,0 +1,18 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+  <!-- Type Example:
+  <type name="MyClass" class="com.acme.BMyClass"/>
+  -->
+  <type name="QueryConsumption" class="com.powstar.n4PowstarTools.bql.BQueryConsumption"/>
+  <type name="ValueConcat5" class="com.powstar.n4PowstarTools.bql.BValueConcat5"/>
+  <type name="QueryRealData" class="com.powstar.n4PowstarTools.bql.BQueryRealData"/>
+  <type name="MultiConsumption" class="com.powstar.n4PowstarTools.bql.BMultiConsumption"/>
+
+  <type name="ConsumptionFilter" class="com.powstar.n4PowstarTools.math.BConsumptionFilter"/>
+
+  <type name="ConsumptionWithDelta" class="com.powstar.n4PowstarTools.sleb.BConsumptionWithDelta"/>
+
+  <type name="AbsTimeToEpoch" class="com.powstar.n4PowstarTools.conversion.BAbsTimeToEpoch"/>
+</types>

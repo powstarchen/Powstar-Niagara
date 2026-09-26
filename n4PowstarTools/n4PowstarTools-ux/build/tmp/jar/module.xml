@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="n4PowstarTools-ux" bajaVersion="0" vendor="powstar" vendorVersion="1.0" description="powstar tools develop for N4 application" preferredSymbol="npt" nre="true" autoload="true" installable="true" buildMillis="1790431634357" buildHost="PSC-LP01" moduleName="n4PowstarTools" runtimeProfile="ux">
+ <dependencies>
+  <dependency name="history-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="web-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="n4PowstarTools-rt" vendor="powstar" vendorVersion="1.0"/>
+  <dependency name="bql-rt" vendor="Tridium" vendorVersion="4.10"/>
+ </dependencies>
+ <dirs/>
+ <types/>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

@@ -1,0 +1,74 @@
+<permissions>
+  <niagara-permission-groups type="ALL">
+    <req-permission>
+      <name>MANAGE_EXECUTION</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>SHUTDOWN_HOOKS</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>LOGGING</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>MODIFY_IO_STREAMS</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>SYSTEM_PROPERTIES</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+      <parameters>
+        <parameter name="properties"	value="*"/>
+        <parameter name="actions"		value="read,write"/>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>SET_SYSTEM_TIME</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>LOAD_LIBRARIES</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+      <parameters>
+        <parameter name="libraries" value="*"/>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>AUTHENTICATION</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>GET_ENVIRONMENT_VARIABLES</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+      <parameters>
+        <parameter name="variables"		value="NIAGARA_HOME,NIAGARA_USER_HOME,NIAGARA_DEV_HOME,GRADLE_HOME,JAVA_HOME,MAVEN_HOME,TEMP,TMP,WINDIR,PATH,CLASSPATH,COMSPEC,PATH,USERNAME,LOGONSERVER,USERDOMAIN,USERNAME,USERPROFILE,HOMEPATH,HOMEDRIVE,APPDATA,LOCALAPPDATA,CLIENTNAME"/>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>NETWORK_COMMUNICATION</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+      <parameters>
+        <parameter name="hosts"			value="*"/>
+        <parameter name="ports"			value="1-65535"/>
+        <parameter name="type"			value="all"/>
+        <parameter name="proxySelector" value="get"/>
+      </parameters>
+    </req-permission>
+    <req-permission>
+      <name>UNAUTHENTICATED_ACCESS</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>DIAGNOSTICS</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+    <req-permission>
+      <name>UI</name>
+      <purposeKey>purposeKey.purpose</purposeKey>
+    </req-permission>
+  </niagara-permission-groups>
+</permissions>
+
+

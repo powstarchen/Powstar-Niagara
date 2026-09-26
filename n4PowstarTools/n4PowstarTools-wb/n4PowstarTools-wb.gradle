@@ -1,0 +1,23 @@
+/* Module Build File */
+
+description     = "powstar tools develop for N4 application"
+ext {
+}
+niagaraModule {
+  moduleName = "n4PowstarTools"
+  preferredSymbol = "npt"
+  runtimeProfile = "wb"
+}
+
+dependencies {
+  compile "Tridium:nre:-"
+  compile "Tridium:baja:-"
+  compile "Tridium:bql-rt:-"
+  compile "Tridium:history-rt:-"
+  compile project(":n4PowstarTools-rt")
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

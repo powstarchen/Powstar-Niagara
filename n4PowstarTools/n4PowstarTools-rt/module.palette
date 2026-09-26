@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" FIPSEnabled="false" reversibleEncodingValidator="[null.1]=" >
+<p m="b=baja" t="b:Folder">
+    <p m="b=baja" t="b:Folder" n="BQL">
+        <p n="QueryConsumption" m="npt=n4PowstarTools" t="npt:QueryConsumption"/>
+        <p n="MultiConsumption" m="npt=n4PowstarTools" t="npt:MultiConsumption"/>
+        <p n="ValueConcat5" m="npt=n4PowstarTools" t="npt:ValueConcat5"/>
+        <p n="QueryRealData" m="npt=n4PowstarTools" t="npt:QueryRealData"/>
+    </p>
+    <p m="b=baja" t="b:Folder" n="Conversion">
+        <p n="AbsTimeToEpoch" m="npt=n4PowstarTools" t="npt:AbsTimeToEpoch"/>
+    </p>
+    <p m="b=baja" t="b:Folder" n="Logic">
+
+    </p>
+    <p m="b=baja" t="b:Folder" n="Math">
+        <p n="ConsumptionFilter" m="npt=n4PowstarTools" t="npt:ConsumptionFilter"/>
+    </p>
+    <p m="b=baja" t="b:Folder" n="GreenMark">
+
+    </p>
+    <p m="b=baja" t="b:Folder" n="SLEB">
+        <p n="ConsumptionWithDelta" m="npt=n4PowstarTools" t="npt:ConsumptionWithDelta"/>
+    </p>
+</p>
+</bajaObjectGraph>

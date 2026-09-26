@@ -1,0 +1,46 @@
+/* Module Build File */
+
+description     = "powstar tools develop for N4 application"
+ext {
+    name			= 'n4PowstarTools'
+    group			= 'Powstar'
+}
+niagaraModule {
+  moduleName = "n4PowstarTools"
+  preferredSymbol = "npt"
+  runtimeProfile = "rt"
+
+  modulePart {
+      name = "n4PowstarTools-ux"
+      runtimeProfile = "ux"
+  }
+
+  modulePart {
+      name = "n4PowstarTools-wb"
+      runtimeProfile = "wb"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.0.0"
+  compile "Tridium:baja:4.0.0"
+  compile "Tridium:bql-rt:4.0.0"
+  compile "Tridium:history-rt:4.0.0"
+    compile "Tridium:web-rt:4.0.0"
+    compile "Tridium:control-rt:4.0.0"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
+jar {
+    doFirst
+            {
+                from { configurations.uberjar.collect { it.isDirectory() ? it : zipTree(it) } }
+            }
+    exclude '*META-INF/*.RSA', '*META-INF/*.SF','*META-INF/*.DSA'
+    from('src') {
+        include 'rc/icons/*.png'
+    }
+}
