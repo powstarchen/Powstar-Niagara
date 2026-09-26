@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module name="n4PowstarTools-rt" bajaVersion="0" vendor="powstar" vendorVersion="1.0" description="powstar tools develop for N4 application" preferredSymbol="npt" nre="true" autoload="true" installable="true" buildMillis="1790431634061" buildHost="PSC-LP01" moduleName="n4PowstarTools" runtimeProfile="rt">
+<module name="n4PowstarTools-rt" bajaVersion="0" vendor="powstar" vendorVersion="1.0" description="powstar tools develop for N4 application" preferredSymbol="npt" nre="true" autoload="true" installable="true" buildMillis="1790432945650" buildHost="PSC-LP01" moduleName="n4PowstarTools" runtimeProfile="rt">
  <dependencies>
   <dependency name="history-rt" vendor="Tridium" vendorVersion="4.10"/>
   <dependency name="web-rt" vendor="Tridium" vendorVersion="4.10"/>
@@ -12,7 +12,6 @@
   <type name="QueryConsumption" class="com.powstar.n4PowstarTools.bql.BQueryConsumption"/>
   <type name="ValueConcat5" class="com.powstar.n4PowstarTools.bql.BValueConcat5"/>
   <type name="QueryRealData" class="com.powstar.n4PowstarTools.bql.BQueryRealData"/>
-  <type name="MultiConsumption" class="com.powstar.n4PowstarTools.bql.BMultiConsumption"/>
   <type name="ConsumptionFilter" class="com.powstar.n4PowstarTools.math.BConsumptionFilter"/>
   <type name="ConsumptionWithDelta" class="com.powstar.n4PowstarTools.sleb.BConsumptionWithDelta"/>
   <type name="AbsTimeToEpoch" class="com.powstar.n4PowstarTools.conversion.BAbsTimeToEpoch"/>
